@@ -4,7 +4,8 @@ import { FaPlus } from 'react-icons/fa';
 const Banner = () => {
     return (
         
-            <div class="hero bg-base-200 py-20">
+<div className=' bg-base-200'>
+              <div class="hero  py-20 container mx-auto">
   <div class="hero-content text-center">
     <div class="">
       <h1 class="text-5xl font-bold text-[#1F2937]">Friends to keep close in your life</h1>
@@ -16,6 +17,7 @@ relationships that matter most.
 Add a Friend</button>
     </div>
   </div>
+</div>
 </div>
         
     );
