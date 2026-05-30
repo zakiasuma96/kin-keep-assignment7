@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://randomuser.me/api/portraits/men/1.jpg",
+    "picture": "https://i.ibb.co.com/Mytrskqc/photo-1480455624313-e29b44bbfde1.avif",
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Emma Wilson",
-    "picture": "https://randomuser.me/api/portraits/women/2.jpg",
+    "picture": "https://i.ibb.co.com/WNJx8pdT/premium-photo-1705018501151-4045c97658a3.avif",
     "email": "emma@example.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Brown",
-    "picture": "https://randomuser.me/api/portraits/men/3.jpg",
+    "picture": "https://i.ibb.co.com/wqsS9yt/photo-1566753323558-f4e0952af115.avif",
     "email": "michael@example.com",
     "days_since_contact": 8,
     "status": "almost due",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Sophia Taylor",
-    "picture": "https://randomuser.me/api/portraits/women/4.jpg",
+    "picture": "https://i.ibb.co.com/YBtZq4cw/photo-1534528741775-53994a69daeb.avif",
     "email": "sophia@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Daniel Lee",
-    "picture": "https://randomuser.me/api/portraits/men/5.jpg",
+    "picture": "https://i.ibb.co.com/cXgvbVpr/premium-photo-1682144187125-b55e638cf286.avif",
     "email": "daniel@example.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Olivia Martin",
-    "picture": "https://randomuser.me/api/portraits/women/6.jpg",
+    "picture": "https://i.ibb.co.com/JwX2q3Nf/photo-1580489944761-15a19d654956.avif",
     "email": "olivia@example.com",
     "days_since_contact": 13,
     "status": "almost due",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "James Anderson",
-    "picture": "https://randomuser.me/api/portraits/men/7.jpg",
+    "picture": "https://i.ibb.co.com/hJg6L2fG/photo-1499996860823-5214fcc65f8f.avif",
     "email": "james@example.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Ava Thompson",
-    "picture": "https://randomuser.me/api/portraits/women/8.jpg",
+    "picture": "https://i.ibb.co.com/67FCKnjY/photo-1594744803329-e58b31de8bf5.avif",
     "email": "ava@example.com",
     "days_since_contact": 6,
     "status": "on-track",
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "William Harris",
-    "picture": "https://randomuser.me/api/portraits/men/9.jpg",
+    "picture": "https://i.ibb.co.com/DPTDTnd8/photo-1556474835-b0f3ac40d4d1.avif",
     "email": "william@example.com",
     "days_since_contact": 10,
     "status": "almost due",
@@ -110,7 +110,7 @@
   {
     "id": 10,
     "name": "Mia Clark",
-    "picture": "https://randomuser.me/api/portraits/women/10.jpg",
+    "picture": "https://i.ibb.co.com/HLz6s1gN/premium-photo-1689551670902-19b441a6afde.avif",
     "email": "mia@example.com",
     "days_since_contact": 25,
     "status": "overdue",
