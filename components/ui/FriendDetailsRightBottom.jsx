@@ -5,18 +5,18 @@ import { IoVideocamOutline } from 'react-icons/io5';
 import { MdOutlineTextsms } from 'react-icons/md';
 
 
-const [storedCalls, setStoredCalls]=useState([]);
-const handleCall = (currentFriend) => {
-   const isExpectedFriendCall = storedCalls.find(friend=>friend.id === currentFriend.id);
-if(isExpectedFriendCall){
+// const [storedCalls, setStoredCalls]=useState([]);
+// const handleCall = (currentFriend) => {
+//    const isExpectedFriendCall = storedCalls.find(friend=>friend.id === currentFriend.id);
+// if(isExpectedFriendCall){
     
-    alert(`call ${currentFriend.name}`);
-}
-else{
-    setStoredCalls([...storedCalls, currentFriend]);
-        alert(`call ${currentFriend.name}`);
-}
-}
+//     alert(`call ${currentFriend.name}`);
+// }
+// else{
+//     setStoredCalls([...storedCalls, currentFriend]);
+//         alert(`call ${currentFriend.name}`);
+// }
+// }
 
 // const handleText =(currentFriend)=>{
 

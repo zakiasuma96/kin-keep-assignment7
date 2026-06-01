@@ -4,7 +4,7 @@ import './index.css'
 import {  RouterProvider } from 'react-router'
 import { router } from './routes/Routers.jsx'
 import { ToastContainer } from 'react-toastify'
-import FriendsContextProvider from './context/FriendsContextProvider.jsx'
+// import FriendsContextProvider from './context/FriendsContextProvider.jsx'
 
 
 
