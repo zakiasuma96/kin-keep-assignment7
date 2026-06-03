@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import FriendDetailsLeft from '../../components/ui/FriendDetailsLeft';
 import FriendDetailsRight from '../../components/ui/FriendDetailsRight';
+
+
 
 const FriendsDetails = () => {
     const {id:friendIdParams} = useParams();

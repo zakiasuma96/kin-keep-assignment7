@@ -1,7 +1,7 @@
 import React from 'react';
 import FriendDetailsRightBottom from './FriendDetailsRightBottom';
 
-const FriendDetailsRight = ({id, name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date}) => {
+const FriendDetailsRight = ({id, name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date, expectedFriend}) => {
     return (
         <section className=' '>
 
@@ -34,7 +34,7 @@ const FriendDetailsRight = ({id, name, picture, email, days_since_contact, statu
   </div>
       </div>
         </div>
-        <FriendDetailsRightBottom id={id} name={name} picture={picture} email={email} days_since_contact={days_since_contact} status={status} tags={tags} bio={bio} goal={goal} next_due_date={next_due_date}/>
+        <FriendDetailsRightBottom id={id} name={name} picture={picture} email={email} days_since_contact={days_since_contact} status={status} tags={tags} bio={bio} goal={goal} next_due_date={next_due_date} expectedFriend={expectedFriend}/>
         </section>
     );
 };

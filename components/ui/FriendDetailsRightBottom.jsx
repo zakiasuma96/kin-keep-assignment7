@@ -1,31 +1,20 @@
-// import React, { useContext } from 'react';
-import { useState } from 'react';
+import  { useContext } from 'react';
+
 import { FiPhoneCall } from 'react-icons/fi';
 import { IoVideocamOutline } from 'react-icons/io5';
 import { MdOutlineTextsms } from 'react-icons/md';
+import { FriendContext } from '../../src/context/FriendsContextProvider.jsx';
 
 
-// const [storedCalls, setStoredCalls]=useState([]);
-// const handleCall = (currentFriend) => {
-//    const isExpectedFriendCall = storedCalls.find(friend=>friend.id === currentFriend.id);
-// if(isExpectedFriendCall){
-    
-//     alert(`call ${currentFriend.name}`);
-// }
-// else{
-//     setStoredCalls([...storedCalls, currentFriend]);
-//         alert(`call ${currentFriend.name}`);
-// }
-// }
 
-// const handleText =(currentFriend)=>{
 
-// }   
-// const handleVideo =(currentFriend)=>{
 
-// }
 
 const FriendDetailsRightBottom = ({id, name, picture, email, days_since_contact, status, tags, bio, goal, next_due_date, expectedFriend}) => {
+
+  const {handleCall} = useContext(FriendContext);
+  const {handleText} = useContext(FriendContext);
+  const {handleVideo} = useContext(FriendContext);
     return (
         <>
     <section>
@@ -50,7 +39,10 @@ const FriendDetailsRightBottom = ({id, name, picture, email, days_since_contact,
     <h2 className="card-title text-[20px] font-medium text-[#244D3F]">Quick Check-In</h2>
     <div className='grid grid-cols-3 justify-between items-center gap-6 '>
         {/* 1 */}
-        <button className=' btn bg-base-200 mt-4 rounded-xl text-[18px] p-14 ' onClick={()=>handleCall(expectedFriend)}>
+        <button className=' btn bg-base-200 mt-4 rounded-xl text-[18px] p-14 ' onClick={()=>{
+          console.log("expectedFriend =", expectedFriend);
+          handleCall(expectedFriend)}}
+          >
         <div className='flex flex-col justify-center items-center text-center gap-2' >
              <span><FiPhoneCall /></span>
              <p>Call</p>
