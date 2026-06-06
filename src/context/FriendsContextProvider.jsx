@@ -1,5 +1,6 @@
-import  { createContext, useState } from 'react';
+import  { createContext, useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
+import { addCallDataToLocalStorage, addTextDataToLocalStorage, addVideoDataToLocalStorage, getCallDataFromLocalStorage, getTextDataFromLocalStorage, getVideoDataFromLocalStorage } from '../utility/localDB';
 
 export const FriendContext =createContext();
 
@@ -9,9 +10,21 @@ const [storedCalls, setStoredCalls]=useState([]);
 const [storedTexts, setStoredTexts]=useState([]);
 const [storedVideos, setStoredVideos]=useState([]);
 
+useEffect(()=>{
+    const calls = getCallDataFromLocalStorage();
+    console.log(calls, "calls")
+    setStoredCalls(calls);
+   const texts = getTextDataFromLocalStorage();
+   setStoredTexts(texts);
+   const videos = getVideoDataFromLocalStorage();
+   setStoredVideos(videos);
+},[]);
+
+    
 
 
 const handleCall = (currentFriend) => {
+    addCallDataToLocalStorage(currentFriend);
         if (!currentFriend ) return;
 
         // 1. Create a new interaction object with a unique ID, name, date, and time
@@ -35,6 +48,7 @@ const handleCall = (currentFriend) => {
    
 
     const handleText = (currentFriend) => {
+        addTextDataToLocalStorage(currentFriend);
         if(!currentFriend ) return;
 
         const newTextLog = {
@@ -51,6 +65,7 @@ const handleCall = (currentFriend) => {
     };
 
     const handleVideo = (currentFriend) => {
+        addVideoDataToLocalStorage(currentFriend);
         if(!currentFriend ) return;
 
         const newVideoLog = {

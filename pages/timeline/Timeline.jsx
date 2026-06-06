@@ -8,6 +8,7 @@ const Timeline = () => {
     
     const {storedCalls, storedTexts, storedVideos} = useContext(FriendContext);
 
+    
     return (
         <>
         <section className='container mx-auto'>
@@ -15,11 +16,11 @@ const Timeline = () => {
         <div>
               <h2 className='text-2xl font-bold mb-4 text-black'>Timeline</h2>
 
-              <select defaultValue="Pick a color" className="select mb-6">
-  <option disabled={true}>Pick a color</option>
-  <option>Crimson</option>
-  <option>Amber</option>
-  <option>Velvet</option>
+              <select defaultValue="Filter Timeline" className="select mb-6">
+  <option disabled={true}>Filter timeline</option>
+  <option>Call</option>
+  <option>Text</option>
+  <option>Video</option>
 </select>
 
               
