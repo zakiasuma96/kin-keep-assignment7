@@ -32,17 +32,17 @@ const handleCall = (currentFriend) => {
             id: Date.now(), // Unique timestamp key for React rendering
             name: currentFriend.name,
             date: new Date().toLocaleDateString(), // e.g., "6/2/2026"
-            time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) // e.g., "06:45 PM"
+            // time: new Date().toLocaleTimeString([]) // e.g., "06:45 PM"
         };
 
         // 2. Trigger the toast notification right away
         toast.success(`Call with ${currentFriend.name}`);
-
+        addCallDataToLocalStorage(newCallLog);
         // 3. Append the new log to the existing history array
         setStoredCalls([
             ...storedCalls,
             newCallLog
-        ]);
+        ])
     };
 
    
@@ -55,13 +55,14 @@ const handleCall = (currentFriend) => {
             id: Date.now(),
             name: currentFriend.name,
             date: new Date().toLocaleDateString(),
-            time: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            // time: new Date().toLocaleTimeString([])
         };
         setStoredTexts([
             ...storedTexts,
             newTextLog
         ]);
         toast.success(`Texted ${currentFriend.name}`);
+        addTextDataToLocalStorage(newTextLog);
     };
 
     const handleVideo = (currentFriend) => {
@@ -72,13 +73,14 @@ const handleCall = (currentFriend) => {
             id: Date.now(),
             name: currentFriend.name,
             date: new Date().toLocaleDateString(),
-            
+            // time: new Date().toLocaleTimeString([])
         };
         setStoredVideos([
             ...storedVideos,
             newVideoLog
         ]);
         toast.success(`Video call with ${currentFriend.name}`);
+        addVideoDataToLocalStorage(newVideoLog);
     };
 
      const data = {
